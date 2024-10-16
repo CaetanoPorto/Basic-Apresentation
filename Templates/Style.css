@@ -1,0 +1,132 @@
+/* Importando as fontes das escritas */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #F6F6F6;
+    font-family: "Montserrat", sans-serif;
+    /* Aplicando a fonte Montserrat ao corpo */
+}
+
+.titulo_destaque {
+    color: #22D4FD;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ajustando a margem para aproximar o conteúdo da imagem */
+    margin: 5% 10%;
+    gap: 5%;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    /* Ajuste de tamanho flexível */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+    /* Aplicando a fonte Krona One para o título */
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    /* Fonte Montserrat para o texto */
+    font-weight: 400;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: "Krona One", sans-serif;
+    /* Subtítulo com fonte Krona One */
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link {
+    border: 2px solid #22D4FD;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 16px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: "Montserrat", sans-serif;
+    /* Fonte Montserrat para os links */
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao__links__link #imagem_linkedin_github_instagram {
+    width: 32px;
+    height: 32px;
+}
+
+/* Hover = Quando passa o mouse em cima */
+.apresentacao__links__link:hover {
+    background-color: #272727;
+}
+
+/* Imagem */
+.apresentacao img {
+    width: 40%;
+    /* Ajuste automático do tamanho da imagem */
+    border-radius: 8px;
+}
+
+/* Media Queries para ajustamento em diferentes tamanhos de tela */
+@media (max-width: 1200px) {
+    .apresentacao {
+        margin: 5% 5%;
+        gap: 3%;
+    }
+
+    .apresentacao__conteudo {
+        width: 55%;
+    }
+
+    .apresentacao img {
+        width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+    }
+
+    .apresentacao img {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
